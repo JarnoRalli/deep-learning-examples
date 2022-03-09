@@ -10,7 +10,11 @@ import itertools
 
 def get_confusion_matrix(model : Model, generator : ImageDataGenerator, data_path : os.path, image_size, batch_size=32):
     '''
-    Creates a confusion matrix when using an ImageDataGenerator with flow_from_directory
+    Creates a confusion matrix based on an ImageDataGenerator with flow_from_directory.
+    This method iterates through the images stored in directories (each sub-directory
+    contains images from a particular class) and predicts, for each image, using the model,
+    which class the input images belongs to. Generates a confusion matrix that can be
+    used to assess how good the model is.
     '''
     print('Creating a confusion matrix')
     predictions = []
