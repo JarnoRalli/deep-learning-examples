@@ -3,8 +3,8 @@
 This is a collection of deep learning examples, tests and related material. Some of the examples are based on courses and tests I've done
 along the years, which I'd like to mention here:
 
-* [Deep Learning from Cousera](https://www.coursera.org/specializations/deep-learning?)
-* [Deep Learning: Advanced Computer Vision from Udemy](https://www.udemy.com/course/advanced-computer-vision)
+* [Deep Learning (Cousera)](https://www.coursera.org/specializations/deep-learning?)
+* [Deep Learning: Advanced Computer Vision by Lazy Programmer (Udemy)](https://www.udemy.com/course/advanced-computer-vision)
 
 # Folder Structure
 
