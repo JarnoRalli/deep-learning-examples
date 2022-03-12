@@ -1,17 +1,17 @@
-name: tensorflow2-gpu
+name: tensorflow-object-detection
 channels:
     - menpo
     - conda-forge
     - anaconda
 dependencies:
-    - python=3.8
-    - tensorflow-gpu=2.6.0
+    - python=3.9
     - jupyter
     - scikit-learn
-    - numpy
     - matplotlib
     - pip
     - pip:
+        - tensorflow==2.8.0
         - opencv-python
+        - numpy
         - gdown
         - fiftyone
