@@ -11,12 +11,16 @@ along the years, which I'd like to mention here:
 * **[conda](./conda/README.md)** contains Conda virtual environment files
 * **[large_files](./large_files/README.md)** some of the examples download training and testing images to this folder
 
+---
+
 # Testing Environment
 
-Testing and executing the exaples has been done in a system with the following characteristics:
+Testing and executing the examples has been done in a system with the following characteristics:
 
 * **OS** Ubuntu 20.04
 * **GPU** GeForce GTX 1070
+
+---
 
 # Setting Up a Virtual Environment
 
@@ -67,3 +71,15 @@ cp object_detection/packages/tf2/setup.py .
 python -m pip install .
 python object_detection/builders/model_builder_tf2_test.py
 ```
+
+---
+
+# Examples
+
+* [Simple classification example](./simple_classification_example.ipynb)
+* [Simple linear regression example](./simple_linear_regression_example.ipynb)
+* [ANN handwritten number classification example](./ANN-handwritten-digits-classification.ipynb)
+* [CNN cifar 10 classification example](./CNN_cifar_10_classification.ipynb)
+* [VGG transfer learning example](./VGG_transfer_learning_fruit_data.ipynb)
+* [ResNet transfer learning example](./ResNet_transfer_learning_fruit_data.ipynb)
+* [ResNet implementation in TensorFlow/Keras](./ResNet_implementation.ipynb)
