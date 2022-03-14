@@ -1,4 +1,4 @@
-name: tensorflow2-gpu
+name: machine-learning
 channels:
     - menpo
     - conda-forge
@@ -10,8 +10,12 @@ dependencies:
     - matplotlib
     - pip
     - pip:
-        - tensorflow-gpu==2.8.0
+        - tensorflow-gpu == 2.8.0
         - tensorflow-datasets
+        - torch
+        - torchvision
+        - umap-learn
+        - ipywidgets >= 7.5
         - opencv-python
         - gdown
         - fiftyone

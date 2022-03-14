@@ -3,13 +3,14 @@
 This is a collection of deep learning examples, tests and related material. Some of the examples are based on courses and tests I've done
 along the years, which I'd like to mention here:
 
-* [Deep Learning (Cousera)](https://www.coursera.org/specializations/deep-learning?)
+* [Deep Learning (Coursera)](https://www.coursera.org/specializations/deep-learning?)
 * [Deep Learning: Advanced Computer Vision by Lazy Programmer (Udemy)](https://www.udemy.com/course/advanced-computer-vision)
 
 # Folder Structure
 
 * **[conda](./conda/README.md)** contains Conda virtual environment files
 * **[large_files](./large_files/README.md)** some of the examples download training and testing images to this folder
+* **[TensorFlow](./TensorFlow/README.md)** a directory where you can clone TensorFlow Object Detection API
 
 ---
 
@@ -24,52 +25,24 @@ Testing and executing the examples has been done in a system with the following 
 
 # Setting Up a Virtual Environment
 
-Most of the examples can be run using an environment with the official TensorFlow 2. Those examples that
-use the Object Detection API, require the API to be installed separately.
-
-## TensorFlow 2 Version 2.6.0
-
-First download and install Anaconda or Miniconda. After this create a virtual environment with TensorFlow 2, OpenCV and related packages:
+In order to run the Jupyter notebooks, install Anaconda or Miniconda, and create the required virtual environment(s) as
+per these [instructions](./conda/README.md). Once you have installed a virtual environment, you can activate it as follows:
 
 ```bash
-cd conda
-conda env create -f tensorflow2_gpu.yml
+conda activate <NAME-OF-THE-ENVIRONMENT>
 ```
 
-Activate the environment, and start Jupyter
+You can get a list of installed environment by executing the following command:
 
 ```bash
-conda activate tensorflow2-gpu
+conda env list
+```
+
+Once the virtual environment is activated, you can open any of the Jupyter notebooks by
+executing the following command in the root directory of this repo:
+
+```bash
 jupyter notebook
-```
-
-## TensorFlow 2 with Object Detection API
-
-These instructions create an environment with both TensorFlow 2 and 
-the Object Detection API. First create an environment with TensorFlow 2,
-and test the installation:
-
-```bash
-cd conda
-conda env create -f tensorflow_object_detection.yml
-conda activate tensorflow-object-detection
-python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
-```
-
-Clone the Object Detection API repo, install it using pip, and
-test that it works:
-
-```bash
-sudo apt-get install protobuf-compiler
-cd TensorFlow
-git clone https://github.com/tensorflow/models.git
-cd models
-git checkout 68039be4aa31fc0d8472a86f536c04e565cb1817
-cd research
-protoc object_detection/protos/*.proto --python_out=.
-cp object_detection/packages/tf2/setup.py .
-python -m pip install .
-python object_detection/builders/model_builder_tf2_test.py
 ```
 
 ---
@@ -83,3 +56,4 @@ python object_detection/builders/model_builder_tf2_test.py
 * [VGG transfer learning example](./VGG_transfer_learning_fruit_data.ipynb)
 * [ResNet transfer learning example](./ResNet_transfer_learning_fruit_data.ipynb)
 * [ResNet implementation in TensorFlow/Keras](./ResNet_implementation.ipynb)
+* [Image embedding example using Fiftyone](./Fiftyone_image_embedding_example.ipynb)
