@@ -4,3 +4,7 @@
 # Apart from .gitignore and README.md
 !.gitignore
 !README.md
+
+# And the Van Gogh image
+!van_gogh.jpeg
+
