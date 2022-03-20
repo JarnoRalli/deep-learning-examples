@@ -57,5 +57,6 @@ jupyter notebook
 * [ResNet transfer learning example](./ResNet_transfer_learning_fruit_data.ipynb)
 * [ResNet implementation in TensorFlow/Keras](./ResNet_implementation.ipynb)
 * [Image embedding example using Fiftyone](./Fiftyone_image_embedding_example.ipynb)
+* [Tensorflow Object Detection API (SSD) example](./SSD_tensorflow2_object_detection_example.ipynb)
 * [Neural style transfer part 1, reproducing content](./Neural_style_transfer_part_1.ipynb)
 
