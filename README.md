@@ -59,4 +59,5 @@ jupyter notebook
 * [Image embedding example using Fiftyone](./Fiftyone_image_embedding_example.ipynb)
 * [Tensorflow Object Detection API (SSD) example](./SSD_tensorflow2_object_detection_example.ipynb)
 * [Neural style transfer part 1, reproducing content](./Neural_style_transfer_part_1.ipynb)
+* [Neural style transfer part 2, reproducing style](./Neural_style_transfer_part_2.ipynb)
 
