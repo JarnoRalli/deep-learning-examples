@@ -5,6 +5,8 @@
 !.gitignore
 !README.md
 
-# And the Van Gogh image
+# And the following images
 !van_gogh.jpeg
+!large_files/picasso.jpg
+!picasso-weeping-woman.jpg
 
