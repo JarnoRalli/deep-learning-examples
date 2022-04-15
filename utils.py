@@ -98,16 +98,24 @@ def plot_confusion_matrix(  cm,
     plt.xlabel('Predicted label')
     plt.show()
 
-def load_image(path):
+def load_image(path, target_size=None):
     '''Loads image from a file into a numpy array.
     
     Args:
         path::
             path to the image to be loaded
 
+        target_size::tuple
+            size of the image after resizing
+
     Returns::
         image::np.array
             uint8 numpy array with shape (height, width, 3)
     '''
 
-    return np.array(Image.open(path))
+    img = Image.open(path)
+
+    if target_size is not None:
+        img = img.resize(target_size)
+
+    return np.array(img)

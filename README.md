@@ -61,4 +61,6 @@ jupyter notebook
 * [Neural style transfer part 1, reproducing content](./Neural_style_transfer_part_1.ipynb)
 * [Neural style transfer part 2, reproducing style](./Neural_style_transfer_part_2.ipynb)
 * [Neural style transfer part 3, reproducing content and style](./Neural_style_transfer_part_3.ipynb)
+* [Class activation maps](./class_activation_maps.ipynb)
+
 
