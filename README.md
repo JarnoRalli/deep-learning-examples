@@ -47,6 +47,12 @@ jupyter notebook
 
 ---
 
+# Additional Documentation
+
+Additional [documentation](./documentation/README.md) regarding the notation, neural network model etc. can be found [here](./documentation/README.md)
+
+---
+
 # Examples
 
 * [Simple classification example](./simple_classification_example.ipynb)
