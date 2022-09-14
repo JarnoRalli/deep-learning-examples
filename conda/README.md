@@ -5,7 +5,7 @@
   * OpenCV
   * TensorFlow (GPU)
   * TensorFlow datasets
-* **tensorflow_object_detection.yml**. This is a base environment for installing the Object Detection API. Contains the following packages:
+* **tensorflow2_object_detection.yml**. This is a base environment for installing the Object Detection API. Contains the following packages:
   * Jupyter
   * OpenCV
   * TensorFlow
@@ -31,35 +31,17 @@ Once the environment has been created, you can activate it by executing the foll
 conda activate <NAME-OF-THE-ENVIRONMENT>
 ```
 
----
+## Testing TensorFlow
 
-# Installing TensorFlow 2 with Object Detection API
-
-These instructions create an environment with both TensorFlow 2 and 
-the Object Detection API. In order to create an environment with TensorFlow 2,
-execute the following from the root directory of this repo:
+Following tests the CPU implementation:
 
 ```bash
-cd conda
-conda env create -f tensorflow_object_detection.yml
-conda activate tensorflow-object-detection
-python -c "import tensorflow as tf;print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
+python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 ```
 
-In order to install the TensorFlow Object Detection API, clone the repo, compile the Protobuf
-definitions, and install it using pip, execute the following from the root directory of this repo:
+Following tests the GPU implementation:
 
 ```bash
-sudo apt-get install protobuf-compiler
-cd TensorFlow
-git clone https://github.com/tensorflow/models.git
-cd models
-git checkout 68039be4aa31fc0d8472a86f536c04e565cb1817
-cd research
-protoc object_detection/protos/*.proto --python_out=.
-cp object_detection/packages/tf2/setup.py .
-python -m pip install .
-python object_detection/builders/model_builder_tf2_test.py
+python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 ```
 
----
