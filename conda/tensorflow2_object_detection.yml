@@ -1,0 +1,20 @@
+name: tensorflow2-object-detection
+channels:
+    - menpo
+    - conda-forge
+    - anaconda
+dependencies:
+    - python=3.9
+    - cudatoolkit=11.2
+    - cudnn=8.1.0
+    - pip
+    - pip:
+        - tensorflow==2.10.0
+        - tensorflow-datasets
+        - opencv-python
+        - numpy
+        - gdown
+        - fiftyone
+        - jupyter
+        - scikit-learn
+        - matplotlib
