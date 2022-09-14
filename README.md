@@ -8,9 +8,8 @@ along the years, which I'd like to mention here:
 
 # Folder Structure
 
-* **[conda](./conda/README.md)** contains Conda virtual environment files
-* **[large_files](./large_files/README.md)** some of the examples download training and testing images to this folder
-* **[TensorFlow](./TensorFlow/README.md)** a directory where you can clone TensorFlow Object Detection API
+* **[conda](./conda/README.md)** contains files for creating Conda virtual environments
+* **[TensorFlow](./TensorFlow/README.md)** deep learning examples using TensorFlow 2
 
 ---
 
@@ -53,20 +52,6 @@ Additional [documentation](./documentation/README.md) regarding the notation, ne
 
 ---
 
-# Examples
 
-* [Simple classification example](./simple_classification_example.ipynb)
-* [Simple linear regression example](./simple_linear_regression_example.ipynb)
-* [ANN handwritten number classification example](./ANN-handwritten-digits-classification.ipynb)
-* [CNN cifar 10 classification example](./CNN_cifar_10_classification.ipynb)
-* [VGG transfer learning example](./VGG_transfer_learning_fruit_data.ipynb)
-* [ResNet transfer learning example](./ResNet_transfer_learning_fruit_data.ipynb)
-* [ResNet implementation in TensorFlow/Keras](./ResNet_implementation.ipynb)
-* [Image embedding example using Fiftyone](./Fiftyone_image_embedding_example.ipynb)
-* [Tensorflow Object Detection API (SSD) example](./SSD_tensorflow2_object_detection_example.ipynb)
-* [Neural style transfer part 1, reproducing content](./Neural_style_transfer_part_1.ipynb)
-* [Neural style transfer part 2, reproducing style](./Neural_style_transfer_part_2.ipynb)
-* [Neural style transfer part 3, reproducing content and style](./Neural_style_transfer_part_3.ipynb)
-* [Class activation maps](./class_activation_maps.ipynb)
 
 
