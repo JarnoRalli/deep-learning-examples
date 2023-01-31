@@ -8,7 +8,8 @@ along the years, which I'd like to mention here:
 
 # Folder Structure
 
-* **[conda](./conda/README.md)** contains files for creating Conda virtual environments
+* **[conda](./conda/README.md)** contains files for creating Conda virtual environments for running the examples
+* **[docker](./docker/README.md)** contains files for creating Docker container for running the examples
 * **[TensorFlow](./TensorFlow/README.md)** deep learning examples using TensorFlow 2
 
 ---
@@ -22,27 +23,10 @@ Testing and executing the examples has been done in a system with the following 
 
 ---
 
-# Setting Up a Virtual Environment
+# Running the Examples
 
-In order to run the Jupyter notebooks, install Anaconda or Miniconda, and create the required virtual environment(s) as
-per these [instructions](./conda/README.md). Once you have installed a virtual environment, you can activate it as follows:
-
-```bash
-conda activate <NAME-OF-THE-ENVIRONMENT>
-```
-
-You can get a list of installed environment by executing the following command:
-
-```bash
-conda env list
-```
-
-Once the virtual environment is activated, you can open any of the Jupyter notebooks by
-executing the following command in the root directory of this repo:
-
-```bash
-jupyter notebook
-```
+You can either create a Conda virtual environment, or a Docker container, for running the examples. In order to do so,
+take a look at the instructions in [conda](./conda/README.md) and [docker](./docker/README.md) directories.
 
 ---
 
@@ -51,7 +35,4 @@ jupyter notebook
 Additional [documentation](./documentation/README.md) regarding the notation, neural network model etc. can be found [here](./documentation/README.md)
 
 ---
-
-
-
 
