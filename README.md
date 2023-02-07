@@ -5,12 +5,16 @@ along the years, which I'd like to mention here:
 
 * [Deep Learning (Coursera)](https://www.coursera.org/specializations/deep-learning?)
 * [Deep Learning: Advanced Computer Vision by Lazy Programmer (Udemy)](https://www.udemy.com/course/advanced-computer-vision)
+* [Deep Learning: Financial Engineering and Artificial Intelligence in Python](https://deeplearningcourses.com/c/ai-finance)
+
+All of the above are fantastic courses and if you're interested in those subjects, you should consider taking them.
 
 # Folder Structure
 
 * **[conda](./conda/README.md)** contains files for creating Conda virtual environments for running the examples
 * **[docker](./docker/README.md)** contains files for creating Docker container for running the examples
 * **[TensorFlow](./TensorFlow/README.md)** deep learning examples using TensorFlow 2
+* **[FinancialEngineering](./FinancialEngineering/README.md)** financial engineering using Python and Ai
 
 ---
 

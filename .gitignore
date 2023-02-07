@@ -153,3 +153,6 @@ cython_debug/
 
 # Jupyter checkpoints
 .ipynb_checkpoints
+
+# CSV files
+*.csv

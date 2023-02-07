@@ -18,6 +18,13 @@
   * PyTorch
   * Torchvision
   * umap-learn
+* **finance.yml**. Contains the following packages:
+  * numpy
+  * jupyter
+  * scikit-learn
+  * matplotlib
+  * pandas
+  * yfinance
 
 You can create a new virtual environment as follows:
 
