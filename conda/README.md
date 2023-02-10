@@ -1,5 +1,9 @@
 # Conda Virtual Environments
 
+In the past I have mostly used miniconda for creating and handling virtual environments. As of 2023, using Ubuntu 20.04, I have
+had lots of issues with both installing miniconda and creating virtual environments. I will leave these here for historical reasons, but
+I will move onto using something more stable.
+
 * **tensorflow2_gpu.yml**. Contains the following packages:
   * Jupyter
   * OpenCV
