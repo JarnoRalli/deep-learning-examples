@@ -20,3 +20,7 @@ Following is a list of Jupyter notebooks related to different aspects of financi
   * Kurtosis
 * [Financial data statistics 3](Financial_data_statistics_3.ipynb)
   * Confidence intervals
+* [Statistical testing 1](Statistical_testing_1.ipynb)
+  * Jarque-Bera: tests if the sample data is from a normal distribution
+  * Normaltest: tests if the sample data is from a normal distribution
+  * Kolmogorov-Smirnov: tests if the sample data is from a reference probability distribution
