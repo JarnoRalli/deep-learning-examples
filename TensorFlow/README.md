@@ -28,6 +28,8 @@ Examples of typical problems where deep-learning is used.
   * Example of a fully-connected, with input size of (28, 28), network for handwritten number classification
 * [CNN cifar 10 classification example](./CNN_cifar_10_classification.ipynb)
   * Example of using a CNN to classify input images into 10 different categories. Uses [CIFAR-10](https://www.kaggle.com/c/cifar-10) dataset.
+* [Classification using imbalanced data sets](./Classification_on_imbalanced_data.ipynb)
+  * Example showing how to use class weights with imbalanced classification data sets
 
 ## 3.2 Regression
 
