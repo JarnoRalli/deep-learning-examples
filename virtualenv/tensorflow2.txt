@@ -1,0 +1,12 @@
+numpy
+jupyter
+scikit-learn
+matplotlib
+pandas
+opendatasets
+tensorflow
+tensorflow-datasets
+opencv-python
+gdown
+fiftyone
+pydot

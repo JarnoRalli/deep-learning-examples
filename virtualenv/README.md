@@ -5,6 +5,7 @@ Virtualenv is a tool for creating isolated virtual Python environments.
 ## 1. Requirement Files
 
 * **[financial.txt](./financial.txt)**. Requirements for the FinancialEngineering examples.
+* **[tensorflow2.txt](./tensorflow2.txt)**. Requirements for TensorFlow 2 examples
 
 ## 2. Installation
 
@@ -16,13 +17,14 @@ pipx install virtualenv
 
 ## 3. Create a New Environment and Activate It
 
-In order to create a new virtual environment, simple execute the following command:
+In order to create a new virtual environment, execute the following command in the directory
+where you want the virtual environment to created:
 
 ```bash
 virtualenv <NAME-OF-THE-ENVIRONMENT>
 ```
 
-Above command will create a directory called `<NAME-OF-THE-ENVIRONMENT>` that contains all the packages etc.
+Above command will create a directory called `<NAME-OF-THE-ENVIRONMENT>`, inside the current directory, that contains all the packages etc.
 of the virtual environment. In order to activate the virtual environment, execute the following:
 
 ```bash
