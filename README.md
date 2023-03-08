@@ -11,12 +11,12 @@ All of the above are fantastic courses and if you're interested in those subject
 
 # Folder Structure
 
-* **[Conda](./conda/README.md)** contains files for creating Conda virtual environments for running the examples
-  * Lately I have had issues with miniconda in Ubuntu 20.04, so I'm moving away from Conda
-* **[Docker](./docker/README.md)** contains files for creating Docker container for running the examples
 * **[Virtualenv](./virtualenv/README.md)** instructions for setting up virtual environments using `virtualenv`
+* **[Docker](./docker/README.md)** contains files for creating Docker container for running the examples
 * **[TensorFlow](./TensorFlow/README.md)** deep learning examples using TensorFlow 2
 * **[FinancialEngineering](./FinancialEngineering/README.md)** financial engineering using Python and Ai
+* **[Conda](./conda/README.md)** contains files for creating Conda virtual environments for running the examples
+  * Lately I have had issues with miniconda in Ubuntu 20.04, so I'm moving away from Conda to Virtualenv
 
 ---
 
