@@ -1,5 +1,7 @@
-tensorflow
-tensorflow-datasets
+torch
+pytorch-gpu
+torchvision
+torchaudio
 numpy
 opencv-python
 scikit-learn

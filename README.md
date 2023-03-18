@@ -5,18 +5,27 @@ along the years, which I'd like to mention here:
 
 * [Deep Learning (Coursera)](https://www.coursera.org/specializations/deep-learning?)
 * [Deep Learning: Advanced Computer Vision by Lazy Programmer (Udemy)](https://www.udemy.com/course/advanced-computer-vision)
-* [Deep Learning: Financial Engineering and Artificial Intelligence in Python](https://deeplearningcourses.com/c/ai-finance)
+* [Deep Learning: Financial Engineering and Artificial Intelligence in Python by Lazy Programmer](https://deeplearningcourses.com/c/ai-finance)
 
 All of the above are fantastic courses and if you're interested in those subjects, you should consider taking them.
 
 # Folder Structure
 
+## Virtual Environments and Docker Images
+
 * **[Virtualenv](./virtualenv/README.md)** instructions for setting up virtual environments using `virtualenv`
 * **[Docker](./docker/README.md)** contains files for creating Docker container for running the examples
-* **[TensorFlow](./TensorFlow/README.md)** deep learning examples using TensorFlow 2
-* **[FinancialEngineering](./FinancialEngineering/README.md)** financial engineering using Python and Ai
 * **[Conda](./conda/README.md)** contains files for creating Conda virtual environments for running the examples
-  * Lately I have had issues with miniconda in Ubuntu 20.04, so I'm moving away from Conda to Virtualenv
+
+## Generic Explanations
+
+* **[Documentation](./documentation/README.md)**
+
+## Deep Learning and Related Examples
+
+* **[TensorFlow](./TensorFlow/README.md)** deep learning examples using TensorFlow 2
+* **[PyTorch](./PyTorch/README.md)** deep learning examples using PyTorch
+* **[FinancialEngineering](./FinancialEngineering/README.md)** financial engineering using Python and Ai
 
 ---
 

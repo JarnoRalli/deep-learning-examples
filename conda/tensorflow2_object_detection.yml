@@ -9,7 +9,7 @@ dependencies:
     - cudnn=8.1.0
     - pip
     - pip:
-        - tensorflow==2.10.0
+        - tensorflow==2.11
         - tensorflow-datasets
         - opencv-python
         - numpy
