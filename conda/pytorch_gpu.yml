@@ -1,16 +1,18 @@
-name: tensorflow2
+name: pytorch
 channels:
     - menpo
     - conda-forge
     - anaconda
+    - pytorch
+    - nvidia
 dependencies:
     - python=3.9
-    - cudatoolkit=11.2.2
-    - cudnn=8.1.0
+    - pytorch
+    - torchvision
+    - torchaudio
+    - pytorch-cuda=11.6
     - pip
     - pip:
-        - tensorflow==2.11
-        - tensorflow-datasets
         - opencv-python
         - gdown
         - fiftyone

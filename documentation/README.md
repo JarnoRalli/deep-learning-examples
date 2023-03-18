@@ -1,13 +1,7 @@
-# Neuron Model
+# Generic Documentation
 
-The neuron can be thought of having two functions, the first (input side) is a linear operation that combines the input, and the second (output side) applies a non-linear activation function to the input.
+This folder contains generic explanations related to machine vision, deep learning etc.
 
-<p align="center">
-<img src="./images/neuron_model.png" width="500">
-</p>
-
-A neural network is obtained by combining several neurons per layers, and outputting results from one layer to another.
-
-<p align="center">
-<img src="./images/simple_network.png" width="500">
-</p>
+* [ANN (Artificial Neural Network) model and notation](./NeuronModel.md)
+* [Vanishing and exploding gradients](./VanishingAndExplodingGradients.md)
+* [Why ResNet?](./ResNet.md)
