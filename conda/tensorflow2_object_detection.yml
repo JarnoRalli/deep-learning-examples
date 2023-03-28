@@ -18,3 +18,4 @@ dependencies:
         - jupyter
         - scikit-learn
         - matplotlib
+        - opendatasets
