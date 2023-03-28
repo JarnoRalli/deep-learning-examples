@@ -1,3 +1,7 @@
+# TensorFlow Examples
+
+This folder contains deep-learning examples, implemented using TensorFlow 2.
+
 # 1 Folder Structure
 
 * **[object_detection_api](./object_detection_api/README.md)** a directory where you can install the TensorFlow Object Detection API
@@ -20,7 +24,11 @@ These notebooks introduce basic concepts of TensorFlow and TensorFlow 2
 
 Examples of typical problems where deep-learning is used.
 
-## 3.1 Classification
+## 3.1 Datasets
+
+Some of the examples use data from Kaggle. In order to automatically download the data, you need to create an account in Kaggle and create an API key. opendatasets uses the Kaggle API to download datasets. For more information, take a look at here.
+
+## 3.2 Classification
 
 * [Simple classification example](./simple_classification_example.ipynb)
   * Simple linear classification example that uses the breast cancer dataset
@@ -30,29 +38,31 @@ Examples of typical problems where deep-learning is used.
   * Example of using a CNN to classify input images into 10 different categories. Uses [CIFAR-10](https://www.kaggle.com/c/cifar-10) dataset.
 * [Classification using imbalanced data sets](./Classification_on_imbalanced_data.ipynb)
   * Example showing how to use class weights with imbalanced classification data sets
+* [Classification using autoencoder](./Classification_autoencoder.ipynb)
+  * Example showing how to use autoencoder to detect abnormal data
 
-## 3.2 Regression
+## 3.3 Regression
 
 * [Simple linear regression example](./simple_linear_regression_example.ipynb)
   * Example of linear regression using the diabetes data set from Sklearn.
 
-## 3.3 Transfer Learning
+## 3.4 Transfer Learning
 
 * [VGG transfer learning example](./VGG_transfer_learning_fruit_data.ipynb)
   * Example of transfer learning, using a fully trained VGG16 from TensorFlow. New classification head is trained on the [Fruits 360](https://www.kaggle.com/moltean/fruits) data
 * [ResNet transfer learning example](./ResNet_transfer_learning_fruit_data.ipynb)
 
-## 3.4 Neural Style Transfer
+## 3.5 Neural Style Transfer
 
 * [Neural style transfer part 1, reproducing content](./Neural_style_transfer_part_1.ipynb)
 * [Neural style transfer part 2, reproducing style](./Neural_style_transfer_part_2.ipynb)
 * [Neural style transfer part 3, reproducing content and style](./Neural_style_transfer_part_3.ipynb)
 
-## 3.5 Object Detection
+## 3.6 Object Detection
 
 * [Tensorflow Object Detection API (SSD) example](./SSD_tensorflow2_object_detection_example.ipynb)
 
-## 3.6 Miscellaneous
+## 3.7 Miscellaneous
 
 * [ResNet implementation in TensorFlow/Keras](./ResNet_implementation.ipynb)
 * [Image embedding example using Fiftyone](./Fiftyone_image_embedding_example.ipynb)
