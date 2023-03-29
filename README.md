@@ -25,7 +25,8 @@ All of the above are fantastic courses and if you're interested in those subject
 
 * **[TensorFlow](./TensorFlow/README.md)** deep learning examples using TensorFlow 2
 * **[PyTorch](./PyTorch/README.md)** deep learning examples using PyTorch
-* **[FinancialEngineering](./FinancialEngineering/README.md)** financial engineering using Python and Ai
+* **[Financial Engineering](./FinancialEngineering/README.md)** financial engineering using Python and Ai
+* **[Hugging Face](./HuggingFace/README.md)** examples of using models from Hugging Face
 
 ---
 
