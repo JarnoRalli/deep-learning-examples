@@ -26,16 +26,19 @@ Following YAML configuration files for Conda environments are available:
 Following YAML configuration files have been defined:
 
 * [tensorflow2_gpu.yml](./tensorflow2_gpu.yml)
-  * Environment name: tensorflow2
+  * **Environment name:** tensorflow2
 * [tensorflow2_object_detection.yml](./tensorflow2_object_detection.yml)
-  * Environment name: tensorflow2-object-detection
+  * **Environment name:** tensorflow2-object-detection
   * This is a base environment for installing the Object Detection API
 * [pytorch_gpu.yml](./pytorch_gpu.yml)
-  * Environment name:
+  * **Environment name:** pytorch
   * Environment with PyTorch (GPU)
 * [finance.yml](./financial.yml)
-  * Environment name: financial
+  * **Environment name:** financial
   * Environment for financial engineering.
+* [huggingface_gpu.yml](./huggingface_gpu.yml)
+  * **Environment name:** huggingface_gpu
+  * Environment for using PyTorch and TensorFlow models from Hugging Face
 
 You can create a new virtual environment as follows:
 
