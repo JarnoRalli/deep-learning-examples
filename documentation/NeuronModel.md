@@ -1,4 +1,4 @@
-# Feed-dorward Neuron Model
+# Feed-Forward Neuron Model
 
 A simple feedforward neuron consists of inputs, weights, activation function and an output
 
@@ -32,4 +32,5 @@ $g(z)$. A neural network is obtained by combining several neurons per layers, an
     <figcaption>Figure 2. Here we have a simple neural network with an input- and output layers.</figcaption>
 </figure>
 
-In Figure 2, $W^[1]$ refers to the weights in the first layer. Each layer might have a different activation function, depending on what the actual task is.
+In Figure 2, $W^{[1]}$ refers to the weights in the first layer. Each layer might have a different activation function, depending on what sort of a problem we are trying
+to solve with the neural network.
