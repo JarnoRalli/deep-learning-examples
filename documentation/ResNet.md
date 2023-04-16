@@ -1,5 +1,7 @@
 # Residual Neural Network aka ResNet
 
+## Basics
+
 A residual neural network is a feed-forward artificial neural network (ANN) that uses skip connections (or shortcuts) that are used to jump over some layers.
 The two main reasons to add skip connections are:
 
@@ -21,15 +23,55 @@ has to learn, it might take an infeasible amount of training cycles before the w
 is that either due to numerical instabilities, or due to the system getting stuck at a local minima, the model might never converge to a global minimum where 
 the weights of the new layers would yield better results.
 
-## Skip Connections
+### Skip Connections
 
-Figure 2 shows the basic idea behind the skip connections. 
+Figure 2. shows the basic idea behind the skip connections. 
 
 <figure align="center">
-    <img src="./images/resnet/ResNet.png" width="600">
+    <img src="./images/resnet/ResNet.png" width="700">
     <figcaption>Figure 2. Left image: a network without skip connections, right image: a network with a skip connection.</figcaption>
 </figure>
 
 As it was established previously, in very deep networks learning the identity function might be infeasible. In the case with the skip connection, with 
-$a = f(x) + x$, if the weights are initialized close to zero, then effectively we have $a = x$. The reason why these sorts of networks are called residual
-networks is due to the fact that the system only needs to learn the weights of the residual $f(x) = a - x$.
+$x^{[i]} = f(x^{[i-1]}) + x^{[i-1]}$, if the all weights are initialized close to zero, then effectively we have $x^{[i]} \approx x^{[i-1]}$. The reason why these sorts of 
+networks are called residual networks is due to the fact that the system only needs to learn the weights of the residual $f(x^{[i-1]}) = x^{[i]} - x^{[i-1]}$.
+
+## Modern View
+
+In a paper called [Residual Networks Behave Like Ensembles of Relatively Shallow Networks](https://arxiv.org/abs/1605.06431) the authors present a novel
+way of understanding how ResNet:s behave. Even if the paper dates back to 2016, the findings are today as interesting as they were at the time of the 
+publication of the paper. Due to the skip connections, data can flow from any residual to any subsequent residual layer. With residual layer we refer
+to residual blocks, i.e. a residual block is seen as a *layer* in this context. The above mentioned skip connections make residual networks very different
+from traditional strictly sequential networks, and the authors propose that residual networks can be seen as a collection of many paths of differing length. 
+Due to the above mentioned, a residual network can be thought of being like a collection of relative shallow networks. Interestingly, by removing single layers
+from residual networks at test time does not noticeably affect their performance. As the authors point out, this is surprising since removing a single layer
+from a traditional architectures, such as VGG, leads to a dramatic loss in performance. Figure 3. shows a 3-block residual network, and an unraveled view of it.
+
+<figure align="center">
+    <img src="./images/resnet/ResNet_unraveled_view.png" width="600">
+    <figcaption>Figure 3. (a) shows a traditional representation of a 3-block residual network, while (b) shows an unraveled view of it.</figcaption>
+</figure>
+
+Residual networks are conventionally shown as one residual block after another, as shown in Figure 3 (a). By unrolling the recursion into 
+an exponential number of nested terms, the network can be *unraveled*, thus showing the shared structure of the network. In a residual network the data flows through
+several paths from input to output, as shown in Figure 3. (b). Figure 4. shows the effect of deleting a layer in a residual network.
+
+<figure align="center">
+    <img src="./images/resnet/ResNet_deleted_layers.png" width="600">
+    <figcaption>Figure 4. (a) Deleting a layer in residual networks at test time is equivalent to zeroing half of the paths. (b) In ordinary
+    feed-forward networks, such as VGG, deleting individual layers alters the only viable path from input to output.</figcaption>
+</figure>
+
+As we can see from Figure 4. (a), deleting a layer in residual networks at test time is equivalent to zeroing half of the paths. In the case of a traditional
+feed-forward network architecture, such as VGG or AlexNet, the data flows from input to output through a single path, as seen in Figure 4. (b).
+
+### Conclusions
+
+* Paths in residual networks do not strongly depend on each other and they behave like an ensemble.
+* Deleting individual layers from traditional network architectures, like VGG, has a considerable negative impact on the performance.
+Removing a single layer means that the only viable path is corrupted.
+* Deleting individual layers from residual networks, leaving the skip connection, has minimal impact on the performance. Paths
+in residual networks do not strongly depend on each other, even if they are trained jointly.
+* Generally, data flows along all paths in residual networks. However, not all paths carry the same amount of gradient. The length of the
+paths through the network affects the gradient magnitude during backpropagation. The authors show that the paths through the networks
+that contribute to the gradient during training are *shorter than expected*.

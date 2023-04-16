@@ -4,4 +4,4 @@ This folder contains generic explanations related to machine vision, deep learni
 
 * [ANN (Artificial Neural Network) model and notation](./NeuronModel.md)
 * [Vanishing and exploding gradients](./VanishingAndExplodingGradients.md)
-* [Why ResNet?](./ResNet.md)
+* [Residual Networks](./ResNet.md)
