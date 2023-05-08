@@ -67,3 +67,10 @@ Some of the examples use data from Kaggle. In order to automatically download th
 * [ResNet implementation in TensorFlow/Keras](./ResNet_implementation.ipynb)
 * [Image embedding example using Fiftyone](./Fiftyone_image_embedding_example.ipynb)
 * [Class activation maps](./class_activation_maps.ipynb)
+
+## 3.8 GAN (Generative Adversial Network)
+
+* [GAN for generating MNIST digits](./GAN_mnist_digits_plain.ipynb)
+  * Example of a GAN learning to generate hand written digits, based on MNIST dataset.
+* [DCGAN for generating MNIST digits](./DCGAN_mnist_digits.ipynb)
+  * Example of a Deep Convolutional GAN learning to generate hand written digits, based on MNIST dataset.

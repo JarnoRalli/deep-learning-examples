@@ -5,11 +5,11 @@ channels:
     - anaconda
 dependencies:
     - python=3.9
-    - cudatoolkit=11.2.2
-    - cudnn=8.1.0
+    - cudatoolkit=11.8.0
     - pip
     - pip:
-        - tensorflow==2.11
+        - nvidia-cudnn-cu11==8.6.0.163
+        - tensorflow==2.12.*
         - tensorflow-datasets
         - opencv-python
         - gdown
