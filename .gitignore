@@ -159,3 +159,6 @@ cython_debug/
 
 # Ignore kaggle configuration file
 kaggle.json
+
+# Ignore training checkpoints
+training_checkpoints/

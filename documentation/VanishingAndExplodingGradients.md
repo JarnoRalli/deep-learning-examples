@@ -61,6 +61,7 @@ function and its derivative.
     <figcaption>Figure 1. Plot of the Sigmoid function and its derivative.</figcaption>
 </figure>
 
+
 As it can be observed from Figure 1, when the input to the Sigmoid function is less than -6, or larger than +6, the derivative becomes very small.
 The further away we get from zero, the smaller the derivative becomes. Now imagine of network with several layers where the activation function is
 a Sigmoid function, and it becomes clear that this can cause issues. If the input to the Sigmoid function is within the area marked with green, we then

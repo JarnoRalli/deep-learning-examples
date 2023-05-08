@@ -52,14 +52,16 @@ Once the environment has been created, you can activate it by executing the foll
 conda activate <NAME-OF-THE-ENVIRONMENT>
 ```
 
-## 3. Updating System Paths
+## 3. Updating System Paths for TensorFlow Environments
 
 Official TensorFlow installation [guide](https://www.tensorflow.org/install/pip) mentions that the `LD_LIBRARY_PATH` needs to be updated 
-when a TensorFlow-environments are used. This can be automated. First you need to acticate the environment, and then execute the following:
+when a TensorFlow-environments are used. This can be automated. First you need to activate the environment, and then execute the following:
 
 ```bash
 mkdir -p $CONDA_PREFIX/etc/conda/activate.d
-echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' > $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+echo 'CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ```
 
 ## 4. Test GPU/CUDA Support
