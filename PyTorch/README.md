@@ -23,5 +23,8 @@ Some of the examples use data from Kaggle. In order to automatically download th
 
 ## 2.2 Language Models
 
+### 2.2.1 Andrej Karpathy's Makemoore Series
 * [Bigram language model](./Bigram_language_model.ipynb)
   * Andrej Karpathy's example regarding a Bigram character level language model.
+* [MLP, Bengio 2003](./MLP_language_model_Bengio_2003.ipynb)
+  * Andrej Karpathy's example regarding an MLP character level language model, based [Bengio et al.'s (2003)](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) model.
