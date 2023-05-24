@@ -26,7 +26,7 @@ Examples of typical problems where deep-learning is used.
 
 ## 3.1 Datasets
 
-Some of the examples use data from Kaggle. In order to automatically download the data, you need to create an account in Kaggle and create an API key. opendatasets uses the Kaggle API to download datasets. For more information, take a look at here.
+Some of the examples use data from Kaggle. In order to automatically download the data, you need to create an account in Kaggle and create an API key. opendatasets uses the Kaggle API to download datasets. For more information, take a look at [here](https://github.com/Kaggle/kaggle-api).
 
 ## 3.2 Classification
 
