@@ -26,5 +26,18 @@ Some of the examples use data from Kaggle. In order to automatically download th
 ### 2.2.1 Andrej Karpathy's Makemoore Series
 * [Bigram language model](./Bigram_language_model.ipynb)
   * Andrej Karpathy's example regarding a Bigram character level language model.
-* [MLP, Bengio 2003](./MLP_language_model_Bengio_2003.ipynb)
+* [MLP, Bengio 2003, part 1](./MLP_language_model_Bengio_2003_part_1.ipynb)
   * Andrej Karpathy's example regarding an MLP character level language model, based [Bengio et al.'s (2003)](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) model.
+  * This is the initial model.
+* [MLP, Bengio 2003, part 2](./MLP_language_model_Bengio_2003_part_2.ipynb)
+  * Andrej Karpathy's example regarding an MLP character level language model, based [Bengio et al.'s (2003)](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) model.
+  * This example introduces batch normalization.
+* [MLP, Bengio 2003, part 3](./MLP_language_model_Bengio_2003_part_3.ipynb)
+  * Andrej Karpathy's example regarding an MLP character level language model, based [Bengio et al.'s (2003)](https://www.jmlr.org/papers/volume3/bengio03a/bengio03a.pdf) model.
+  * Same as part 2, but the code has been PyTorchified, i.e. the code mimics PyTorch layers.
+  * Visualises the following:
+    * Activation distribution
+    * Gradient distribution
+    * Weight gradient distribution
+    * Update to weight ratio $\dfrac{lr \cdot \nabla}{weight}$, where $lr$ is the learning rate and $\nabla$ is the gradient
+
