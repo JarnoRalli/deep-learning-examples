@@ -40,4 +40,7 @@ Some of the examples use data from Kaggle. In order to automatically download th
     * Gradient distribution
     * Weight gradient distribution
     * Update to weight ratio $\dfrac{lr \cdot \nabla}{weight}$, where $lr$ is the learning rate and $\nabla$ is the gradient
+* [MLP, Bengio 2003, manual back-propagation](./MLP_language_model_Bengio_2003_manual_backprop.ipynb)
+  * Builds backpropagation manually, step by step, without using autograd.
+  * This is not complete yet, perhaps one day I'll complete it...
 
