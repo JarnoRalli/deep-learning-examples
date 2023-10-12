@@ -44,3 +44,14 @@ Some of the examples use data from Kaggle. In order to automatically download th
   * Builds backpropagation manually, step by step, without using autograd.
   * This is not complete yet, perhaps one day I'll complete it...
 
+# 2.3 Regression
+
+* [House price prediction](./house_price_prediction.ipynb)
+  * House price prediction
+
+# 2.4 Recommendation
+
+* [RecSys Challenge 2015](./GNN_recommendation_system.ipynb)
+  * This example is related to the 2015 RecSys challenge, the idea being to associate clicks leading to purchase events in a web-shop.
+  This information can then be used as a basis for a recommender system
+  * This approach uses a GNN

@@ -162,3 +162,6 @@ kaggle.json
 
 # Ignore training checkpoints
 training_checkpoints/
+
+# Binary files
+*.pth
