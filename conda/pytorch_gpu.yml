@@ -1,16 +1,17 @@
 name: pytorch
 channels:
-    - menpo
-    - conda-forge
-    - anaconda
+    - pyg
     - pytorch
     - nvidia
+    - conda-forge
 dependencies:
-    - python=3.9
-    - pytorch
+    - python=3.10
+    - pytorch=2.0
     - torchvision
     - torchaudio
-    - pytorch-cuda=11.6
+    - pytorch-scatter
+    - pytorch-cuda=11.8
+    - pyg
     - pip
     - pip:
         - opencv-python
@@ -20,5 +21,4 @@ dependencies:
         - scikit-learn
         - matplotlib
         - opendatasets
-
 
