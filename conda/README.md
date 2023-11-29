@@ -1,10 +1,10 @@
-# Conda Virtual Environments
+# 1 Conda Virtual Environments
 
 In the past I have mostly used miniconda for creating and handling virtual environments. As of 2023, using Ubuntu 20.04, I have
 had lots of issues with both installing miniconda and creating virtual environments.
 
 
-## 1. Libmamba Solver
+## 1.1 Libmamba Solver
 
 Conda's own solver is very slow, so I recommend using `Libmamba`. To use the new solver, first update conda in the base environment:
 
@@ -19,7 +19,7 @@ conda install -n base conda-libmamba-solver
 conda config --set solver libmamba
 ```
 
-## 2. Environments
+## 1.2 Environments
 
 Following YAML configuration files for Conda environments are available:
 
@@ -52,9 +52,9 @@ Once the environment has been created, you can activate it by executing the foll
 conda activate <NAME-OF-THE-ENVIRONMENT>
 ```
 
-## 3. Updating System Paths for TensorFlow Environments
+## 1.3 Updating System Paths for TensorFlow Environments
 
-Official TensorFlow installation [guide](https://www.tensorflow.org/install/pip) mentions that the `LD_LIBRARY_PATH` needs to be updated 
+Official TensorFlow installation [guide](https://www.tensorflow.org/install/pip) mentions that the `LD_LIBRARY_PATH` needs to be updated
 when a TensorFlow-environments are used. This can be automated. First you need to activate the environment, and then execute the following:
 
 ```bash
@@ -64,9 +64,9 @@ echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$CONDA_PREFIX/lib/' >> $CONDA_PREF
 source $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ```
 
-## 4. Test GPU/CUDA Support
+## 1.4 Test GPU/CUDA Support
 
-### 4.1 PyTorch
+### 1.4.1 PyTorch
 
 Activate the pytorch virtual environment and execute the following in Python:
 
@@ -77,7 +77,7 @@ torch.cuda.is_available()
 
 You'll get `True/False` output indicating whether acceleration is available.
 
-### 4.2 TensorFlow 2
+### 1.4.2 TensorFlow 2
 
 Activate the tensorflow 2 virtual environment and execute the following:
 

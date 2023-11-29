@@ -1,10 +1,10 @@
-# PyTorch Examples
+# 1 PyTorch Examples
 
 This folder contains deep-learning examples, implemented using PyTorch.
 
 ---
 
-# 1 PyTorch Basics
+# 2 PyTorch Basics
 
 Following notebooks introduce basic concepts of PyTorch.
 
@@ -13,17 +13,17 @@ Following notebooks introduce basic concepts of PyTorch.
 
 ---
 
-# 2 Deep Learning Examples
+# 3 Deep Learning Examples
 
 Examples of typical problems where deep-learning is used.
 
-## 2.1 Datasets
+## 3.1 Datasets
 
 Some of the examples use data from Kaggle. In order to automatically download the data, you need to create an account in Kaggle and create an API key. opendatasets uses the Kaggle API to download datasets. For more information, take a look at [here](https://github.com/Kaggle/kaggle-api).
 
-## 2.2 Language Models
+## 3.2 Language Models
 
-### 2.2.1 Andrej Karpathy's Makemoore Series
+### 3.2.1 Andrej Karpathy's Makemoore Series
 * [Bigram language model](./Bigram_language_model.ipynb)
   * Andrej Karpathy's example regarding a Bigram character level language model.
 * [MLP, Bengio 2003, part 1](./MLP_language_model_Bengio_2003_part_1.ipynb)
@@ -44,12 +44,12 @@ Some of the examples use data from Kaggle. In order to automatically download th
   * Builds backpropagation manually, step by step, without using autograd.
   * This is not complete yet, perhaps one day I'll complete it...
 
-# 2.3 Regression
+## 3.3 Regression
 
 * [House price prediction](./house_price_prediction.ipynb)
   * House price prediction
 
-# 2.4 Recommendation
+## 3.4 Recommendation
 
 * [RecSys Challenge 2015](./GNN_recommendation_system.ipynb)
   * This example is related to the 2015 RecSys challenge, the idea being to associate clicks leading to purchase events in a web-shop.

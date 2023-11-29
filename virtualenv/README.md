@@ -1,15 +1,15 @@
-# Virtualenv
+# 1 Virtualenv
 
 Virtualenv is a tool for creating isolated virtual Python environments.
 
-## 1. Requirement Files
+## 1.1 Requirement Files
 
 * **[financial.txt](./financial.txt)**. Requirements for the FinancialEngineering examples.
 * **[tensorflow2.txt](./tensorflow2.txt)**. Requirements for TensorFlow 2 examples
 
 If you want NVidia GPU support for TensorFlow or PyTorch, you need to install the required drivers and CUDA.
 
-## 2. Installation
+## 1.2 Installation
 
 The proposed method for installing `virtualenv` is using `pipx`
 
@@ -17,7 +17,7 @@ The proposed method for installing `virtualenv` is using `pipx`
 pipx install virtualenv
 ```
 
-## 3. Create a New Environment and Activate It
+## 1.3 Create a New Environment and Activate It
 
 In order to create a new virtual environment, execute the following command in the directory
 where you want the virtual environment to created:
@@ -39,7 +39,7 @@ Once you have activated the virtual environment, you can install Python packages
 pip install -r <PATH-TO-THE-REQUIREMENTS-FILE>
 ```
 
-## 4. Deactivate an Environment
+## 1.4 Deactivate an Environment
 
 You can deactivate an activ virtual environment as using the following command:
 
@@ -47,9 +47,9 @@ You can deactivate an activ virtual environment as using the following command:
 deactivate
 ```
 
-## 5. Test GPU/CUDA Support
+## 1.5 Test GPU/CUDA Support
 
-### 5.1 PyTorch
+### 1.5.1 PyTorch
 
 Activate the pytorch virtual environment and execute the following in Python:
 
@@ -60,7 +60,7 @@ torch.cuda.is_available()
 
 You'll get `True/False` output indicating whether acceleration is available.
 
-### 5.2 TensorFlow 2
+### 1.5.2 TensorFlow 2
 
 Activate the tensorflow 2 virtual environment and execute the following:
 

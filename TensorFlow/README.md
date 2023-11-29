@@ -1,8 +1,8 @@
-# TensorFlow Examples
+# 1 TensorFlow Examples
 
 This folder contains deep-learning examples, implemented using TensorFlow 2.
 
-# 1 Folder Structure
+# 1.1 Folder Structure
 
 * **[object_detection_api](./object_detection_api/README.md)** a directory where you can install the TensorFlow Object Detection API
 * **[large_files](./large_files/README.md)** some of the examples download training and testing images to this folder

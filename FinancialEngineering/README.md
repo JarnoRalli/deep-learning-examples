@@ -1,10 +1,10 @@
-# Financial Engineering
+# 1 Financial Engineering
 
 Some of the examples use data from [Kaggle](https://www.kaggle.com/). In order to automatically download the data, you need to create
-an account in Kaggle and create an [API key](https://github.com/Kaggle/kaggle-api). `opendatasets` uses the Kaggle API to download 
+an account in Kaggle and create an [API key](https://github.com/Kaggle/kaggle-api). `opendatasets` uses the Kaggle API to download
 datasets. For more information, take a look at [here](https://github.com/JovianHQ/opendatasets/blob/master/README.md#kaggle-credentials).
 
-## Jupyter Notebooks
+## 1.1 Jupyter Notebooks
 
 Following is a list of Jupyter notebooks related to different aspects of financial engineering.
 
