@@ -21,7 +21,7 @@ $$
 \begin{bmatrix}
 2.0 & 0.0 \\
 0.0 & 2.0
-\end{bmatrix}^5 = 
+\end{bmatrix}^5 =
 \begin{bmatrix}
 2.0^5 & 0.0 \\
 0.0 & 2.0^5
@@ -29,7 +29,7 @@ $$
 \begin{bmatrix}
 32.0 & 0.0 \\
 0.0 & 32.0
-\end{bmatrix} 
+\end{bmatrix}
 $$
 
 And if the values are close to zero:
@@ -38,7 +38,7 @@ $$
 \begin{bmatrix}
 0.1 & 0.0 \\
 0.0 & 0.1
-\end{bmatrix}^5 = 
+\end{bmatrix}^5 =
 \begin{bmatrix}
 0.1^5 & 0.0 \\
 0.0 & 0.1^5
@@ -46,7 +46,7 @@ $$
 \begin{bmatrix}
 0.00001 & 0.0 \\
 0.0 & 0.00001
-\end{bmatrix} 
+\end{bmatrix}
 $$
 
 As we can see, even only with 5 layers if the initial values are close to zero, the output from the network is very small
@@ -76,5 +76,5 @@ There are several ways how to deal with the problem of vanishing gradients, here
 This means that $z \approx 0$
 * Initialization of the weights is important, so that we are within the domain where the gradient of the activation function is still
 reasonably large
-* [Residual networks](./ResNet.md) (ResNet) is another approach that might help since in the skip connections the signal doesn't go 
+* [Residual networks](./ResNet.md) (ResNet) is another approach that might help since in the skip connections the signal doesn't go
 through the activation function, i.e. we have $a = g(z) + x$, where $g(\cdot)$ denotes the activation function.

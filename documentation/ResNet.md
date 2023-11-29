@@ -20,13 +20,13 @@ Figure 1 demonstrates what this means in practice.
 
 
 In practice, however, this is not quite so straightforward due to several reasons. For one, due to the number of weights in larger networks that the model
-has to learn, it might take an infeasible amount of training cycles before the weights corresponding to an identity function would be learned. Another reason 
-is that either due to numerical instabilities, or due to the system getting stuck at a local minima, the model might never converge to a global minimum where 
+has to learn, it might take an infeasible amount of training cycles before the weights corresponding to an identity function would be learned. Another reason
+is that either due to numerical instabilities, or due to the system getting stuck at a local minima, the model might never converge to a global minimum where
 the weights of the new layers would yield better results.
 
 ### Skip Connections
 
-Figure 2. shows the basic idea behind the skip connections. 
+Figure 2. shows the basic idea behind the skip connections.
 
 <figure align="center">
     <img src="./images/resnet/ResNet.png" width="700">
@@ -34,8 +34,8 @@ Figure 2. shows the basic idea behind the skip connections.
 </figure>
 
 
-As it was established previously, in very deep networks learning the identity function might be infeasible. In the case with the skip connection, with 
-$x^{[i]} = f(x^{[i-1]}) + x^{[i-1]}$, if the all weights are initialized close to zero, then effectively we have $x^{[i]} \approx x^{[i-1]}$. The reason why these sorts of 
+As it was established previously, in very deep networks learning the identity function might be infeasible. In the case with the skip connection, with
+$x^{[i]} = f(x^{[i-1]}) + x^{[i-1]}$, if the all weights are initialized close to zero, then effectively we have $x^{[i]} \approx x^{[i-1]}$. The reason why these sorts of
 networks are called residual networks is due to the fact that the system only needs to learn the weights of the residual $f(x^{[i-1]}) = x^{[i]} - x^{[i-1]}$.
 
 ## Modern View
@@ -55,7 +55,7 @@ in the case of traditional architectures, such as VGG, leads to a dramatic loss 
 </figure>
 
 
-Residual networks are conventionally shown as one residual block after another, as shown in Figure 3 (a). By unrolling the recursion into 
+Residual networks are conventionally shown as one residual block after another, as shown in Figure 3 (a). By unrolling the recursion into
 an exponential number of nested terms, the network can be *unraveled*, thus revealing shared structure of the network. In a residual network the data flows through
 several paths from input to output, as is shown in Figure 3. (b). Figure 4. shows the effect of deleting a layer in a residual network.
 

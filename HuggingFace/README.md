@@ -1,8 +1,8 @@
-# Hugging Face
+# 1 Hugging Face
 
 This directory contains examples using models from Hugging Face
 
-# 1 Examples
+# 2 Examples
 
 * [Image captioning](./Image_captioning.ipynb)
   * Conditional and un-conditional image captioning

@@ -1,4 +1,4 @@
-# Generic Documentation
+# 1 Generic Documentation
 
 This folder contains generic explanations related to machine vision, deep learning etc.
 

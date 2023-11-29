@@ -1,11 +1,11 @@
-# Docker
+# 1 Docker
 
 Instead of using an virtual environment, such as Conda etc., for installing the required
 packages, another option is to use Docker container that already has all the required dependencies
 installed. In this case we run the Jupyter server inside the Docker container and connect
 to it using a browser running in the host.
 
-## 1. Installing Nvidia's Container Toolkit
+## 1.1 Installing Nvidia's Container Toolkit
 
 Before creating the docker image, you need to install Nvidia's Container Toolkit. Instructions can be found here:
 
@@ -31,7 +31,7 @@ You should see output following (or similar) output:
 | 32%   38C    P0    34W / 151W |    735MiB /  8192MiB |      0%      Default |
 |                               |                      |                  N/A |
 +-------------------------------+----------------------+----------------------+
-                                                                               
+
 +-----------------------------------------------------------------------------+
 | Processes:                                                                  |
 |  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
@@ -40,7 +40,7 @@ You should see output following (or similar) output:
 +-----------------------------------------------------------------------------+
 ```
 
-## 2. Create the Docker Image
+## 1.2 Create the Docker Image
 
 After this you can create the docker image used in the examples.
 
@@ -49,7 +49,7 @@ cd deep-learning-examples/docker
 docker build -t deep-learning-examples --build-arg requirements=requirements.txt .
 ```
 
-## 3. Running Jupyter Inside a Docker Container
+## 1.3 Running Jupyter Inside a Docker Container
 
 Execute the following, inside the directory where the Jupyter notebooks are (e.g.
 `deep-learning-examples/TensorFlow`), in order to start the container:

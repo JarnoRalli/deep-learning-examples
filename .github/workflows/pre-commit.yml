@@ -1,0 +1,23 @@
+name: pre-commit
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+    - name: install pre-commit
+      run: |
+        pip install --upgrade pip
+        pip install pre-commit
+        pre-commit install
+    - name: run pre-commit hooks
+      run: |
+        pre-commit run --color=always --all-files

@@ -9,7 +9,7 @@ ENV PIP_ROOT_USER_ACTION=ignore
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-# Install required packages. 
+# Install required packages.
 RUN apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
     wget python3 python3-pip python3.8-venv python-is-python3 python3-dev \
