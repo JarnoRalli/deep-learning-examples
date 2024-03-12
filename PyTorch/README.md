@@ -43,6 +43,8 @@ Some of the examples use data from Kaggle. In order to automatically download th
 * [MLP, Bengio 2003, manual back-propagation](./MLP_language_model_Bengio_2003_manual_backprop.ipynb)
   * Builds backpropagation manually, step by step, without using autograd.
   * This is not complete yet, perhaps one day I'll complete it...
+* [Implementation of the Wavenet for NLP](./Van_den_Oord_wavenet.ipynb)
+  * Andrej Karpathy's example of a wavenet implementation for NLP, based on [van den Oord et al.'s (2016)](https://arxiv.org/pdf/1609.03499.pdf) model.
 
 ## 3.3 Regression
 
