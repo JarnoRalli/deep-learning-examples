@@ -1,4 +1,4 @@
-name: huggingface_gpu
+name: huggingface-gpu
 channels:
     - menpo
     - conda-forge
@@ -6,12 +6,9 @@ channels:
     - pytorch
     - nvidia
 dependencies:
-    - python=3.9
-    - cudatoolkit=11.2.2
-    - cudnn=8.1.0
+    - python=3.10
     - pytorch
     - torchvision
-    - torchaudio
     - pytorch-cuda=11.6
     - pip
     - pip:
@@ -19,14 +16,11 @@ dependencies:
         - fairseq
         - g2p_en
         - beautifulsoup4
-        - tensorflow==2.11
-        - tensorflow-datasets
         - opencv-python
-        - gdown
-        - fiftyone
         - jupyter
         - scikit-learn
         - matplotlib
         - opendatasets
-
+        - pandas
+        - seaborn
 
