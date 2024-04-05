@@ -12,7 +12,9 @@ dependencies:
     - pytorch-cuda=11.6
     - pip
     - pip:
-        - transformers
+        - transformers[torch]
+        - datasets
+        - torchinfo
         - fairseq
         - g2p_en
         - beautifulsoup4
@@ -23,4 +25,5 @@ dependencies:
         - opendatasets
         - pandas
         - seaborn
+        - evaluate
 

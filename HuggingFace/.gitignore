@@ -1,3 +1,5 @@
 AirlineTweets.csv*
 robert_frost.txt*
 bbc_text_cls.csv*
+distil-bert-trainer/
+trained_distilbert_model/

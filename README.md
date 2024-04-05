@@ -6,7 +6,7 @@ along the years, which I'd like to mention here:
 * [Deep Learning (Coursera)](https://www.coursera.org/specializations/deep-learning?)
 * [Deep Learning: Advanced Computer Vision by Lazy Programmer (Udemy)](https://www.udemy.com/course/advanced-computer-vision)
 * [Deep Learning: Financial Engineering and Artificial Intelligence in Python by Lazy Programmer](https://deeplearningcourses.com/c/ai-finance)
-* [Deep Learning: Data Science: Transformers for Natural Language Processing](https://deeplearningcourses.com/c/data-science-transformers-nlp)
+* [Deep Learning: Data Science: Transformers for Natural Language Processing by Lazy Programmer](https://deeplearningcourses.com/c/data-science-transformers-nlp)
 
 All of the above are fantastic courses and if you're interested in those subjects, you should consider taking them.
 
