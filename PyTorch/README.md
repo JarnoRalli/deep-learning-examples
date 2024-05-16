@@ -24,6 +24,7 @@ Some of the examples use data from Kaggle. In order to automatically download th
 ## 3.2 Language Models
 
 ### 3.2.1 Andrej Karpathy's Makemoore Series
+
 * [Bigram language model](./Bigram_language_model.ipynb)
   * Andrej Karpathy's example regarding a Bigram character level language model.
 * [MLP, Bengio 2003, part 1](./MLP_language_model_Bengio_2003_part_1.ipynb)
@@ -39,12 +40,14 @@ Some of the examples use data from Kaggle. In order to automatically download th
     * Activation distribution
     * Gradient distribution
     * Weight gradient distribution
-    * Update to weight ratio $\dfrac{lr \cdot \nabla}{weight}$, where $lr$ is the learning rate and $\nabla$ is the gradient
+    * Update to weights ratio, see [1]
 * [MLP, Bengio 2003, manual back-propagation](./MLP_language_model_Bengio_2003_manual_backprop.ipynb)
   * Builds backpropagation manually, step by step, without using autograd.
   * This is not complete yet, perhaps one day I'll complete it...
 * [Implementation of the Wavenet for NLP](./Van_den_Oord_wavenet.ipynb)
   * Andrej Karpathy's example of a wavenet implementation for NLP, based on [van den Oord et al.'s (2016)](https://arxiv.org/pdf/1609.03499.pdf) model.
+
+[1] Update to weights ratio $\dfrac{lr \cdot \nabla}{weight}$, where $lr$ is the learning rate and $\nabla$ is the gradient
 
 ## 3.3 Regression
 
