@@ -1,0 +1,23 @@
+{
+  "name": "Tensorflow GPU Container",
+  "build": {
+    "dockerfile": "../../docker/Dockerfile.tensorflow2.2.0",
+    "context": "../../docker",
+    "args": {
+      "requirements": "requirements-tensorflow.txt"
+    }
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "runArgs": ["--gpus", "all"],
+  "remoteUser": "jupyter",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers"
+      ]
+    }
+  }
+}

@@ -16,9 +16,15 @@ All of the above are fantastic courses and if you're interested in those subject
 
 ## 2.1 Virtual Environments and Docker Images
 
-* **[Virtualenv](./virtualenv/README.md)** instructions for setting up virtual environments using `virtualenv`
-* **[Docker](./docker/README.md)** contains files for creating Docker container for running the examples
-* **[Conda](./conda/README.md)** contains files for creating Conda virtual environments for running the examples
+Since PyTorch stopped supporting Conda in [2024](https://github.com/pytorch/pytorch/issues/138506), using any other virtualization technology is recommended.
+Docker containers are probably the most portable option.
+
+* **[Virtualenv](./virtualenv/README.md)**
+  * Instructions for setting up virtual environments using `virtualenv`.
+* **[Docker](./docker/README.md)**
+  * Contains files for creating Docker container for running the examples.
+* **[Conda](./conda/README.md)**
+  * Contains files for creating Conda virtual environments for running the examples.
 
 ## 2.2 Generic Explanations
 
@@ -26,10 +32,14 @@ All of the above are fantastic courses and if you're interested in those subject
 
 ## 2.3 Deep Learning and Related Examples
 
-* **[TensorFlow](./TensorFlow/README.md)** deep learning examples using TensorFlow 2
-* **[PyTorch](./PyTorch/README.md)** deep learning examples using PyTorch
-* **[Financial Engineering](./FinancialEngineering/README.md)** financial engineering using Python and Ai
-* **[Hugging Face](./HuggingFace/README.md)** examples of using models from Hugging Face
+* **[TensorFlow](./TensorFlow/README.md)**
+  * Deep learning examples using TensorFlow 2.
+* **[PyTorch](./PyTorch/README.md)**
+  * Deep learning examples using PyTorch.
+* **[Financial Engineering](./FinancialEngineering/README.md)**
+  * Financial engineering using Python and Ai.
+* **[Hugging Face](./HuggingFace/README.md)**
+  * Examples of using models from Hugging Face.
 
 ---
 

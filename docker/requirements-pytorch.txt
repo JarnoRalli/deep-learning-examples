@@ -1,0 +1,12 @@
+transformers[torch]
+datasets
+opencv-python
+matplotlib
+scikit-learn
+seaborn
+evaluate
+torchinfo
+pandas
+jupyterlab
+ipykernel
+ipywidgets

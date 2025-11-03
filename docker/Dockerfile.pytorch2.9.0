@@ -1,0 +1,35 @@
+FROM pytorch/pytorch:2.9.0-cuda12.8-cudnn9-runtime
+
+ENV NVIDIA_DRIVER_CAPABILITIES=$NVIDIA_DRIVER_CAPABILITIES,video,compute,graphics,utility
+
+# Ignore sudo warning for pip
+ENV PIP_ROOT_USER_ACTION=ignore
+ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONUNBUFFERED=1
+
+# Install required OS packages
+RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
+    python3-dev gcc make git wget \
+    libglvnd0 libgl1 libglx0 libegl1 \
+    && python3 -m pip install --upgrade pip build \
+    && rm -rf /var/lib/apt/lists/* \
+    && apt-get autoremove -y
+
+# Add requirements and install Python packages
+ARG requirements
+ADD $requirements ./
+RUN pip install --no-cache-dir -r $requirements
+
+# Create a user called jupyter
+ARG USERNAME=jupyter
+ARG USER_UID=1000
+ARG USER_GID=1000
+
+RUN groupadd --gid $USER_GID $USERNAME \
+    && useradd -m -s /bin/bash --uid $USER_UID --gid $USER_GID $USERNAME
+
+# Set workspace
+USER $USERNAME
+ENV HOME=/home/$USERNAME
+WORKDIR /workspace
+

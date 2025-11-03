@@ -1,0 +1,11 @@
+tensorflow-datasets
+opencv_python
+numpy
+umap-learn
+gdown
+fiftyone
+matplotlib
+scikit-learn
+jupyterlab
+ipykernel
+ipywidgets
