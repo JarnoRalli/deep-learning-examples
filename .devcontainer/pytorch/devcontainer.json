@@ -1,0 +1,23 @@
+{
+  "name": "PyTorch 2.9.0 GPU Container",
+  "build": {
+    "dockerfile": "../../docker/Dockerfile.pytorch2.9.0",
+    "context": "../../docker",
+    "args": {
+      "requirements": "requirements-pytorch.txt"
+    }
+  },
+  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "runArgs": ["--gpus", "all"],
+  "remoteUser": "jupyter",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-renderers"
+      ]
+    }
+  }
+}

@@ -40,35 +40,47 @@ You should see output following (or similar) output:
 +-----------------------------------------------------------------------------+
 ```
 
-## 1.2 Create the Docker Image
+## 1.2 Docker Containers
+
+Following Docker containers are available:
+
+* [Dockerfile.pytorch2.9.0](./Dockerfile.pytorch2.9.0)
+  * Dockerfile with PyTorch 2.9.0, cuda12.8 and cudnn9
+  * Use with [requirements-pytorch.txt](./requirements-pytorch.txt)
+* [Dockerfile.tensorflow2.2.0](./Dockerfile.tensorflow2.2.0)
+  * Dockerfile with TensorFlow 2.2.0 (GPU)
+  * Use with [requirements-tensorflow.txt](./requirements-tensorflow.txt)
+
+## 1.3 Create the Docker Image
 
 After this you can create the docker image used in the examples.
 
 ```bash
 cd deep-learning-examples/docker
-docker build -t deep-learning-examples --build-arg requirements=requirements.txt .
+docker build -t <NAME> -f <DOCKERFILE> --build-arg requirements=<REQUIREMENTS-FILE> .
 ```
 
-## 1.3 Running Jupyter Inside a Docker Container
+, where `<NAME>` is the name you want to give the container, `<DOCKERFILE>` is the Dockerfile used for
+creating the container and `<REQUIREMENTS-FILE>` is the requirement file given to `pip` when building the container.
+
+## 1.4 Running Jupyter Inside a Docker Container
 
 Execute the following, inside the directory where the Jupyter notebooks are (e.g.
 `deep-learning-examples/TensorFlow`), in order to start the container:
 
-
 ```bash
 docker run -it \
-  --user $(id -u):$(id -g) \
   --publish 8888:8888 \
   --volume $(pwd):/workspace/ \
   -e NVIDIA_DRIVER_CAPABILITIES=all \
-  --gpus all deep-learning-examples bash
+  --gpus all <NAME> bash
 ```
 
-Execute the following, inside the running container, in order to
-launch Jupyter server:
+Replace `<NAME>` with the name of the container. Execute the following, inside the running container, in order to
+launch the Jupyter server:
 
 ```bash
-jupyter notebook --ip=0.0.0.0 --no-browser
+jupyter lab --ip=0.0.0.0 --no-browser --allow-root
 ```
 
 You should see output similar to the following:
@@ -84,4 +96,4 @@ Or copy and paste one of these URLs:
 Start a web-browser in the host machine, and use any of the links, e.g.
 `http://127.0.0.1:8888/?token=d6105755dae78e8d4c6138a7a6ff42907b2e5b3f9be17456` (use the actual link that was
 output when starting the Jupyter server) to connect to the Jupyter server.
-
+4

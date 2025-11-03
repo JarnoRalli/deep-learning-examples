@@ -12,8 +12,11 @@ This directory contains examples, such as using existing models, tokenizers etc.
 
 ## 2.2 Language Related
 
-* [Tokenizer_examples.ipynb](./Tokenizer_examples.ipynb)
+* [Tokenizer_examples_1.ipynb](./Tokenizer_examples_1.ipynb)
   * Examples regarding tokenization using BERT language model
+* [Tokenizer_examples_2.ipynb](./Tokenizer_examples_2.ipynb)
+  * Examples regarding tokenization related to question-answering language modeling
+  * Tokenization of long contexts using sliding window
 * [Sentiment analysis](./Sentiment_analysis.ipynb)
   * Sentiment analysis based on given text
   * Transformer based
@@ -21,7 +24,7 @@ This directory contains examples, such as using existing models, tokenizers etc.
   * Text generation based on a given prompt
   * Transformer based
 * [Masked language modeling](./Masked_language_modeling.ipynb)
-  * Masked text generation, i.e. find most probably matches for words that have been masked out from the text
+  * Masked text generation, i.e. find most probable matches for words that have been masked out from the text
   * Can be thought of being related to denoising autoencoders
   * Transformer based
 * [Fine_tuning_sentiment_analysis.ipynb](./Fine_tuning_sentiment_analysis.ipynb)
